@@ -11,3 +11,5 @@ inputs:
 runs:
   using: 'node12'
   main: 'index.js'
+dependencies:
+  - '@actions/core@1.5.0'

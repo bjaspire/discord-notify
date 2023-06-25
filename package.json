@@ -1,0 +1,23 @@
+{
+  "name": "discord-notify",
+  "version": "1.0.0",
+  "description": "Discord Notify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bjaspire/discord-notify.git"
+  },
+  "author": "Bijaya Oli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bjaspire/discord-notify/issues"
+  },
+  "homepage": "https://github.com/bjaspire/discord-notify#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "axios": "^1.4.0"
+  }
+}

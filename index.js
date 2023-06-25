@@ -1,8 +1,9 @@
-const core = require('@actions/core');
-const axios = require('axios');
 const { execSync } = require('child_process');
+const axios = require('axios');
 
 try {
+  const core = require('@actions/core');
+
   const webhookUrl = core.getInput('webhook-url');
   const message = core.getInput('message');
 

@@ -1,6 +1,6 @@
 name: 'Discord Notify'
 description: 'Send a notification to Discord channel'
-author: 'Your Name'
+author: 'Bijaya Oli'
 inputs:
   webhook-url:
     description: 'Discord webhook URL'

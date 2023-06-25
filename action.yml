@@ -1,4 +1,4 @@
-name: 'Discord Notify'
+name: 'Discord Notify With Commits'
 description: 'Send a notification to Discord channel'
 author: 'Bijaya Oli'
 inputs:

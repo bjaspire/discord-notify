@@ -1,0 +1,13 @@
+name: 'Discord Notify'
+description: 'Send a notification to Discord channel'
+author: 'Your Name'
+inputs:
+  webhook-url:
+    description: 'Discord webhook URL'
+    required: true
+  message:
+    description: 'Notification message'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

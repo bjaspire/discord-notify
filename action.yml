@@ -1,18 +1,25 @@
-name: 'Discord Notify With Commits'
-description: 'Send a notification to Discord channel'
-author: 'Bijaya Oli'
+name: Discord Notify With Commits
+description: Send a notification to Discord channel
+author: Bijaya Oli
 branding:
   color: green
   icon: message-square
 inputs:
   webhook-url:
-    description: 'Discord webhook URL'
+    description: Discord webhook URL
     required: true
   message:
-    description: 'Notification message'
+    description: Notification message
     required: true
 runs:
   using: 'node12'
-  main: 'index.js'
-dependencies:
-  - '@actions/core@1.5.0'
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install
+    - name: Run action
+      run: node index.js
+        with:
+          webhook-url: ${{ inputs.webhook-url }}
+          message: ${{ inputs.message }}
